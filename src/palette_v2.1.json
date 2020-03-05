@@ -1,0 +1,41 @@
+{
+  "paletteName": "monokai-grey",
+  "swatches": [
+    {
+      "name": "grey900",
+      "color": "0a0a09"
+    },
+    {
+      "name": "grey800",
+      "color": "141411"
+    },
+    {
+      "name": "grey700",
+      "color": "2a2b26"
+    },
+    {
+      "name": "grey600",
+      "color": "53544c"
+    },
+    {
+      "name": "grey500",
+      "color": "7f8076"
+    },
+    {
+      "name": "grey400",
+      "color": "aaaba0"
+    },
+    {
+      "name": "grey300",
+      "color": "d3d4c9"
+    },
+    {
+      "name": "grey200",
+      "color": "ebebe2"
+    },
+    {
+      "name": "grey100",
+      "color": "f5f5ef"
+    }
+  ]
+}

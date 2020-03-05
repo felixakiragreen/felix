@@ -1,0 +1,289 @@
+[
+  {
+    "paletteName": "monokai-red",
+    "swatches": [
+      {
+        "name": "red900",
+        "color": "290607"
+      },
+      {
+        "name": "red800",
+        "color": "470a0d"
+      },
+      {
+        "name": "red700",
+        "color": "710e15"
+      },
+      {
+        "name": "red600",
+        "color": "a11420"
+      },
+      {
+        "name": "red500",
+        "color": "cb1d37"
+      },
+      {
+        "name": "red400",
+        "color": "ed3467"
+      },
+      {
+        "name": "red300",
+        "color": "fc64a1"
+      },
+      {
+        "name": "red200",
+        "color": "ffa3d6"
+      },
+      {
+        "name": "red100",
+        "color": "ffecfa"
+      }
+    ]
+  },
+  {
+    "paletteName": "monokai-orange",
+    "swatches": [
+      {
+        "name": "orange900",
+        "color": "2f150d"
+      },
+      {
+        "name": "orange800",
+        "color": "50240f"
+      },
+      {
+        "name": "orange700",
+        "color": "75330f"
+      },
+      {
+        "name": "orange600",
+        "color": "9e490c"
+      },
+      {
+        "name": "orange500",
+        "color": "cb6709"
+      },
+      {
+        "name": "orange400",
+        "color": "f1901d"
+      },
+      {
+        "name": "orange300",
+        "color": "fcb760"
+      },
+      {
+        "name": "orange200",
+        "color": "fed7a8"
+      },
+      {
+        "name": "orange100",
+        "color": "fff6e9"
+      }
+    ]
+  },
+  {
+    "paletteName": "monokai-yellow",
+    "swatches": [
+      {
+        "name": "yellow900",
+        "color": "371f05"
+      },
+      {
+        "name": "yellow800",
+        "color": "5f3906"
+      },
+      {
+        "name": "yellow700",
+        "color": "8f5c07"
+      },
+      {
+        "name": "yellow600",
+        "color": "c6930b"
+      },
+      {
+        "name": "yellow500",
+        "color": "f8cb1b"
+      },
+      {
+        "name": "yellow400",
+        "color": "f7dd4b"
+      },
+      {
+        "name": "yellow300",
+        "color": "f5ea7e"
+      },
+      {
+        "name": "yellow200",
+        "color": "f3f1b0"
+      },
+      {
+        "name": "yellow100",
+        "color": "f2f2de"
+      }
+    ]
+  },
+  {
+    "paletteName": "monokai-green",
+    "swatches": [
+      {
+        "name": "green900",
+        "color": "052907"
+      },
+      {
+        "name": "green800",
+        "color": "0c4a07"
+      },
+      {
+        "name": "green700",
+        "color": "1e6e08"
+      },
+      {
+        "name": "green600",
+        "color": "3f9608"
+      },
+      {
+        "name": "green500",
+        "color": "6fbf10"
+      },
+      {
+        "name": "green400",
+        "color": "a5e22c"
+      },
+      {
+        "name": "green300",
+        "color": "cfed6d"
+      },
+      {
+        "name": "green200",
+        "color": "e4efab"
+      },
+      {
+        "name": "green100",
+        "color": "e8ead8"
+      }
+    ]
+  },
+  {
+    "paletteName": "monokai-blue",
+    "swatches": [
+      {
+        "name": "blue900",
+        "color": "001336"
+      },
+      {
+        "name": "blue800",
+        "color": "002662"
+      },
+      {
+        "name": "blue700",
+        "color": "013f8c"
+      },
+      {
+        "name": "blue600",
+        "color": "0362b2"
+      },
+      {
+        "name": "blue500",
+        "color": "0f8fd0"
+      },
+      {
+        "name": "blue400",
+        "color": "38bce6"
+      },
+      {
+        "name": "blue300",
+        "color": "70dbef"
+      },
+      {
+        "name": "blue200",
+        "color": "a9eaf4"
+      },
+      {
+        "name": "blue100",
+        "color": "e5f6f8"
+      }
+    ]
+  },
+  {
+    "paletteName": "monokai-purple",
+    "swatches": [
+      {
+        "name": "purple900",
+        "color": "120639"
+      },
+      {
+        "name": "purple800",
+        "color": "271163"
+      },
+      {
+        "name": "purple700",
+        "color": "442294"
+      },
+      {
+        "name": "purple600",
+        "color": "643bc0"
+      },
+      {
+        "name": "purple500",
+        "color": "8659e1"
+      },
+      {
+        "name": "purple400",
+        "color": "9f7af2"
+      },
+      {
+        "name": "purple300",
+        "color": "b29af8"
+      },
+      {
+        "name": "purple200",
+        "color": "ccbdf9"
+      },
+      {
+        "name": "purple100",
+        "color": "f0e6f9"
+      }
+    ]
+  },
+  {
+    "paletteName": "monokai-grey",
+    "swatches": [
+      {
+        "name": "grey900",
+        "color": "0a0a09"
+      },
+      {
+        "name": "grey800",
+        "color": "141411"
+      },
+      {
+        "name": "grey700",
+        "color": "2a2b26"
+      },
+      {
+        "name": "grey600",
+        "color": "53544c"
+      },
+      {
+        "name": "grey500",
+        "color": "7e8074"
+      },
+      {
+        "name": "grey400",
+        "color": "a9ab9d"
+      },
+      {
+        "name": "grey300",
+        "color": "d2d4c5"
+      },
+      {
+        "name": "grey200",
+        "color": "e9ebdd"
+      },
+      {
+        "name": "grey100",
+        "color": "f3f5e9"
+      }
+    ]
+  }
+]
