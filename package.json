@@ -1,19 +1,40 @@
 {
+  "name": "@f*g/felix",
   "version": "0.1.0",
-  "license": "MIT",
+  "description": "my personal scheme: inspired by tailwind, monokai, & the color 🥑\"felix\"",
+  "keywords": [
+    "color",
+    "scheme",
+    "felix",
+    "monokai",
+    "tailwind"
+  ],
+  "homepage": "https://github.com/felixakiragreen/felix#readme",
+  "bugs": {
+    "url": "https://github.com/felixakiragreen/felix/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felixakiragreen/felix.git"
+  },
+  "license": "Unlicense",
+  "author": "Felix Green",
   "main": "dist/index.js",
+  "module": "dist/felix.esm.js",
   "typings": "dist/index.d.ts",
+  "directories": {
+    "test": "test"
+  },
   "files": [
     "dist"
   ],
   "scripts": {
-    "start": "tsdx watch",
     "build": "tsdx build",
-    "test": "tsdx test",
     "lint": "tsdx lint",
-    "prepare": "tsdx build"
+    "prepare": "tsdx build",
+    "start": "tsdx watch",
+    "test": "tsdx test"
   },
-  "peerDependencies": {},
   "husky": {
     "hooks": {
       "pre-commit": "tsdx lint"
@@ -25,9 +46,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "felix",
-  "author": "Felix Green",
-  "module": "dist/felix.esm.js",
+  "dependencies": {},
   "devDependencies": {
     "@rollup/plugin-url": "^4.0.2",
     "@types/jest": "^25.1.3",
@@ -36,5 +55,6 @@
     "tsdx": "^0.12.3",
     "tslib": "^1.11.1",
     "typescript": "^3.8.3"
-  }
+  },
+  "peerDependencies": {}
 }
