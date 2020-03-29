@@ -30,6 +30,6 @@ From there I built out a color palette to use with my stuffs.
 
 ## Development
 
-`yarn start`
+`yarn dev`
 `yarn build`
 `yarn publish`
