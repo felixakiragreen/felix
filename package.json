@@ -1,6 +1,6 @@
 {
   "name": "@f*g/felix",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "my personal scheme: inspired by tailwind, monokai, & the color 🥑\"felix\"",
   "keywords": [
     "color",
@@ -33,7 +33,8 @@
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "start": "tsdx watch",
-    "test": "tsdx test"
+    "test": "tsdx test",
+    "publish": "npm publish --access public"
   },
   "husky": {
     "hooks": {
