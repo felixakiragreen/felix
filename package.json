@@ -34,7 +34,7 @@
     "prepare": "tsdx build",
     "start": "tsdx watch",
     "test": "tsdx test",
-    "publish": "npm publish --access public"
+    "npm:publish": "npm publish --access public"
   },
   "husky": {
     "hooks": {
