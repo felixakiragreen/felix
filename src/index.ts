@@ -2,7 +2,7 @@
 
 export { default as tailwindConfig } from './tailwindconfig';
 
-export { default as colors } from './palette';
+export * from './palette';
 
 // export const sum = (a: number, b: number) => {
 //   if ('development' === process.env.NODE_ENV) {
