@@ -30,6 +30,14 @@ From there I built out a color palette to use with my stuffs.
 
 ## Development
 
-`yarn dev`
+`yarn start`
 `yarn build`
 `yarn publish`
+
+## Changelog
+
+### v0.1 add palette as JSON, CSS, & Tailwind config
+
+- v0.1.1 move values to TS file, use in Tailwind config
+- v0.1.2 `export { colors }`, update README
+- v0.1.3 export all color names `export * from ./pallete`, update README
