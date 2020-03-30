@@ -1,3 +1,7 @@
+export const white = '#ffffff';
+export const black = '#000000';
+export const felix = '#adff2f';
+
 export const grey = {
   '900': '#0a0a09',
   '800': '#141411',
@@ -82,7 +86,7 @@ export const purple = {
   '100': '#f0e6f9',
 };
 
-const colors = {
+export const colors = {
   grey,
   red,
   orange,
