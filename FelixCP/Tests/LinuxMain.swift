@@ -1,7 +1,7 @@
 import XCTest
 
-import FelikromakaiTests
+import FelixCPTests
 
 var tests = [XCTestCaseEntry]()
-tests += FelikromakaiTests.allTests()
+tests += FelixCPTests.allTests()
 XCTMain(tests)

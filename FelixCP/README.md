@@ -1,4 +1,4 @@
-# Felikromakai
+# FelixColorPalette
 
 A description of this package.
 

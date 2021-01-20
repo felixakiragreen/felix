@@ -1,24 +1,28 @@
 import SwiftUI
 
-struct ColorPreset: Equatable {
-	var hue: ColorHue
-	var lum: ColorLuminance
-	var sys: Bool = true /// true → color adapts to darkMode (100 → 900)
+public struct FelixCP {
+	var test = "Hello, World!"
+}
+
+public struct ColorPreset: Equatable {
+	public var hue: ColorHue
+	public var lum: ColorLuminance
+	public var sys: Bool = true /// true → color adapts to darkMode (100 → 900)
 
 	/// Initialization from components
-	init(hue: ColorHue, lum: ColorLuminance) {
+	public init(hue: ColorHue, lum: ColorLuminance) {
 		self.hue = hue
 		self.lum = lum
 	}
 
-	init(hue: ColorHue, lum: ColorLuminance, sys: Bool) {
+	public init(hue: ColorHue, lum: ColorLuminance, sys: Bool) {
 		self.hue = hue
 		self.lum = lum
 		self.sys = sys
 	}
 
 	/// Empty initialization
-	init() {
+	public init() {
 		self.hue = .red
 		self.lum = .normal
 		self.sys = false
@@ -29,15 +33,15 @@ struct ColorPreset: Equatable {
 extension ColorPreset {
 	
 	/// returns "grey.100" or "grey.sys.100"
-	func getString() -> String {
+	public func getString() -> String {
 		return ColorPreset.toString((hue, lum), sys: sys)
 	}
 
-	func getColor() -> Color {
+	public func getColor() -> Color {
 		return Color(getString())
 	}
 
-	static func toString(_ components: (ColorHue, ColorLuminance), sys: Bool = true) -> String {
+	public static func toString(_ components: (ColorHue, ColorLuminance), sys: Bool = true) -> String {
 		let (hue, lum) = components
 		if sys {
 			return "\(hue).sys.\(lum.rawValue)"
@@ -49,16 +53,16 @@ extension ColorPreset {
 
 /// Extension to get color with same hue, but offset luminance
 extension ColorPreset {
-	func getSecondaryColor() -> Color {
+	public func getSecondaryColor() -> Color {
 		return ColorPreset(hue: hue, lum: lum.secondary, sys: sys).getColor()
 	}
 
-	func getTertiaryColor() -> Color {
+	public func getTertiaryColor() -> Color {
 		let string = ColorPreset.toString((hue, lum.tertiary), sys: sys)
 		return Color(string)
 	}
 
-	func getQuarternaryColor() -> Color {
+	public func getQuarternaryColor() -> Color {
 		let string = ColorPreset.toString((hue, lum.quarternary), sys: sys)
 		return Color(string)
 	}
@@ -66,30 +70,30 @@ extension ColorPreset {
 
 /// Extension to get an "accessible font color" (a black or white color for text)
 extension ColorPreset {
-	func getAccessibleColor(_ grey: Bool = true) -> Color {
+	public func getAccessibleColor(_ grey: Bool = true) -> Color {
 		return ColorPreset(hue: grey ? .grey : hue, lum: lum.accessible, sys: sys).getColor()
 	}
 }
 
 // MARK: - ColorHue
 
-enum ColorHue: String, CaseIterable {
+public enum ColorHue: String, CaseIterable {
 	case grey, red, orange, yellow, green, blue, purple
 }
 
 extension ColorHue: Identifiable {
-	var id: String { rawValue }
+	public var id: String { rawValue }
 }
 
 extension ColorHue {
-	static var primaries: [ColorHue] = [.red, .yellow, .blue]
-	static var secondaries: [ColorHue] = [.green, .orange, .purple]
-	static var wheel: [ColorHue] = [.red, .orange, .yellow, .green, .blue, .purple]
+	public static var primaries: [ColorHue] = [.red, .yellow, .blue]
+	public static var secondaries: [ColorHue] = [.green, .orange, .purple]
+	public static var wheel: [ColorHue] = [.red, .orange, .yellow, .green, .blue, .purple]
 }
 
 // MARK: - ColorLuminance
 
-enum ColorLuminance: Int, CaseIterable {
+public enum ColorLuminance: Int, CaseIterable {
 	case nearWhite = 100
 	case extraLight = 200
 	case light = 300
@@ -102,12 +106,12 @@ enum ColorLuminance: Int, CaseIterable {
 }
 
 extension ColorLuminance: Identifiable {
-	var id: Int { rawValue }
+	public var id: Int { rawValue }
 }
 
 /// Secondary (3 away), Tertiary (2 away), Quarternary (1 away)
 extension ColorLuminance {
-	var secondary: ColorLuminance {
+	public var secondary: ColorLuminance {
 		switch self {
 		case .nearWhite: return .normal
 		case .extraLight: return .medium
@@ -121,7 +125,7 @@ extension ColorLuminance {
 		}
 	}
 
-	var tertiary: ColorLuminance {
+	public var tertiary: ColorLuminance {
 		switch self {
 		case .nearWhite: return .light
 		case .extraLight: return .normal
@@ -135,7 +139,7 @@ extension ColorLuminance {
 		}
 	}
 
-	var quarternary: ColorLuminance {
+	public var quarternary: ColorLuminance {
 		switch self {
 		case .nearWhite: return .extraLight
 		case .extraLight: return .light
@@ -152,7 +156,7 @@ extension ColorLuminance {
 
 /// Accessible (farthest away)
 extension ColorLuminance {
-	var accessible: ColorLuminance {
+	public var accessible: ColorLuminance {
 		switch self {
 		case .nearWhite: return .nearBlack
 		case .extraLight: return .nearBlack

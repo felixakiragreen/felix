@@ -1,12 +1,12 @@
 import XCTest
-@testable import Felikromakai
+@testable import FelixCP
 
-final class FelikromakaiTests: XCTestCase {
+final class FelixCPTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(Felikromakai().text, "Hello, World!")
+        XCTAssertEqual(FelixCP().text, "Hello, World!")
     }
 
     static var allTests = [
