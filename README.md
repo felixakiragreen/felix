@@ -36,6 +36,8 @@ From there I built out a color palette to use with my stuffs.
 
 ## Changelog
 
+12021·01·20 - added FelixCP for SwiftPM (I'm over the morbid obesity of NPM)
+
 ### v0.1 add palette as JSON, CSS, & Tailwind config
 
 - v0.1.1 move values to TS file, use in Tailwind config
