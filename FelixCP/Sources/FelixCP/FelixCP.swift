@@ -20,6 +20,12 @@ public struct ColorPreset: Equatable {
 		self.lum = lum
 		self.sys = sys
 	}
+	
+	public init(lum: ColorLuminance, sys: Bool = true) {
+		self.hue = .grey
+		self.lum = lum
+		self.sys = sys
+	}
 
 	/// Empty initialization
 	public init() {
