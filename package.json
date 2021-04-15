@@ -1,61 +1,62 @@
 {
-  "name": "@f*g/felix",
-  "version": "0.1.3",
-  "description": "my personal scheme: inspired by monokai, tailwind, & the color 🥑\"felix\"",
-  "keywords": [
-    "color",
-    "scheme",
-    "felix",
-    "monokai",
-    "tailwind"
-  ],
-  "homepage": "https://github.com/felixakiragreen/felix#readme",
-  "bugs": {
-    "url": "https://github.com/felixakiragreen/felix/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/felixakiragreen/felix.git"
-  },
-  "license": "Unlicense",
-  "author": "Felix Green",
-  "main": "dist/index.js",
-  "module": "dist/felix.esm.js",
-  "typings": "dist/index.d.ts",
-  "directories": {
-    "test": "test"
-  },
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "tsdx build",
-    "lint": "tsdx lint",
-    "prepare": "tsdx build",
-    "start": "tsdx watch",
-    "test": "tsdx test",
-    "npm:publish": "npm publish --access public"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsdx lint"
-    }
-  },
-  "prettier": {
-    "printWidth": 80,
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "es5"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "@rollup/plugin-url": "^4.0.2",
-    "@types/jest": "^25.1.3",
-    "husky": "^4.2.3",
-    "rollup": "^1.32.0",
-    "tsdx": "^0.12.3",
-    "tslib": "^1.11.1",
-    "typescript": "^3.8.3"
-  },
-  "peerDependencies": {}
+	"name": "@f*g/felix",
+	"version": "0.2.0",
+	"description": "my personal scheme: inspired by monokai, tailwind, & the color 🥑\"felix\"",
+	"keywords": [
+		"color",
+		"scheme",
+		"felix",
+		"monokai",
+		"tailwind"
+	],
+	"homepage": "https://github.com/felixakiragreen/felix#readme",
+	"bugs": {
+		"url": "https://github.com/felixakiragreen/felix/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/felixakiragreen/felix.git"
+	},
+	"license": "Unlicense",
+	"author": "Felix Green",
+	"main": "dist/index.js",
+	"module": "dist/felix.esm.js",
+	"typings": "dist/index.d.ts",
+	"directories": {
+		"test": "test"
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsdx build",
+		"lint": "tsdx lint",
+		"npm:publish": "npm publish --access public",
+		"prepare": "tsdx build",
+		"start": "tsdx watch",
+		"test": "tsdx test"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "tsdx lint"
+		}
+	},
+	"prettier": {
+		"useTabs": true,
+		"singleQuote": true,
+		"trailingComma": "es5",
+		"printWidth": 80,
+		"semi": false
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@rollup/plugin-url": "^4.0.2",
+		"@types/jest": "^25.1.3",
+		"husky": "^4.2.3",
+		"rollup": "^1.32.0",
+		"tsdx": "^0.12.3",
+		"tslib": "^1.11.1",
+		"typescript": "^3.8.3"
+	},
+	"peerDependencies": {}
 }
