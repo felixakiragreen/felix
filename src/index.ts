@@ -1,6 +1,6 @@
 // import './colors.css';
 
-export { default as tailwindConfig } from './tailwindconfig';
+export { default as tailwindConfig } from './tailwind';
 
 export * from './palette';
 
