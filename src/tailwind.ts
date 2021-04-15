@@ -1,35 +1,26 @@
-import {
-  grey,
-  red,
-  orange,
-  yellow,
-  green,
-  blue,
-  purple,
-  felix,
-  indigo,
-  teal,
-  vulcan,
-  mirage,
-} from './palette';
+import { palette, singles } from './palette'
 
-// felix,
-// indigo,
-// teal,
-// vulcan,
-// mirage,
+interface ColorSingles {
+	[key: string]: string
+}
+
+const wrapColorsForTailwind = (colors: ColorSingles) => {
+	return Object.entries(colors).reduce((acc, [colorName, colorHex]) => {
+		return {
+			...acc,
+			[colorName]: {
+				DEFAULT: colorHex,
+			},
+		}
+	}, {})
+}
 
 const colors = {
-  gray: {
-    ...grey,
-  },
-  grey,
-  red,
-  orange,
-  yellow,
-  green,
-  blue,
-  purple,
-};
+	...palette,
+	gray: {
+		...palette.grey,
+	},
+	...wrapColorsForTailwind(singles),
+}
 
-export default colors;
+export default colors
