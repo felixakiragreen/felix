@@ -1,6 +1,10 @@
 export const white = '#ffffff';
 export const black = '#000000';
 export const felix = '#adff2f';
+export const indigo = '#5400fc';
+export const teal = '#6a8494';
+export const vulcan = '#11141c';
+export const mirage = '#151a25';
 
 export const grey = {
   '900': '#0a0a09',
