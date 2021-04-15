@@ -1,8 +1,8 @@
 // import './colors.css';
 
-export { default as tailwindConfig } from './tailwind';
+export { default as tailwindConfig } from './tailwind'
 
-export * from './palette';
+export * from './palette'
 
 // export const sum = (a: number, b: number) => {
 //   if ('development' === process.env.NODE_ENV) {
